@@ -1,418 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DBC</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <title>Portfollio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">    
 </head>
-
 <body>
-
-    <!-- Navbar part start -->
-    <section id="navbar">
+    <div id="header">
         <div class="container">
-            <div class="navbar-main">
-                <div class="menu">
-                    <ul>
-                        <li>
-                            <a href="#">Home</a>
-                            <a href="#">News</a>
-                            <a href="#">Activities</a>
-                            <a href="#">Club Members</a>
-                            <a href="#">Sign Up</a>
-                        </li>
-                    </ul>
+            <nav>
+                <img class="logo" src="images/logo.png" alt="">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#protfolio">Protfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/Ux Designer</p>
+                <h1>Hi, I'm <span>ANIK</span><br>
+                  FROM BANGLADESH</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------about----------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg" alt="">
                 </div>
-
-                <div class="icon">
-                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
-                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                    <i class="fa fa-google-plus-official" aria-hidden="true"></i>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a front -end  web developer.I can provide clean code and pixel perfect design.I aslo make the website more & more interactive with web animations.I can  provide clean code pixel  perfect design.i allso make the website more& more interactive with web animations.A responsive design makes your  website accessible to all users,  regardless of their device.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experiance')">Experiance</p>
+                        <p class="tab-links" onclick="opentab('education')">Educations</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interface</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Android/ios apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experiance">
+                        <ul>
+                            <li><span>2021 - Current</span><br>Designing Web/App interface</li>
+                            <li><span>2019- 2021</span><br>Web app Development</li>
+                            <li><span>2018 - 2019</span><br>Building Android/ios apps</li>
+                           
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022</span><br>Designing Web/App interface</li>
+                            <li><span>2022</span><br>CIS From DIU</li>
+                           
+                        </ul>
+                    </div>
                 </div>
             </div>
-
         </div>
-    </section>
-    <!-- Navbar part end -->
-
-    <!-- Banner Part Start -->
-    <section id="banner">
+    </div>
+    <!-- ---------------Services---------------- -->
+    <div id="services">
         <div class="container">
-            <div class="banner-content">
-                <div class="text">
-                    <h2> Want to enjoy your time?</h2>
-                    <h1>We’re here to help.</h1>
-                    <p>We will provide you a enjoyable nature to enjoy with your family or friend</p>
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I  throw my self down among the talll grass by the strem as i lie cllose  to the earth.There are manny variations of passages of lorem Ipsum available. </p>
                     <a href="#">Learn more</a>
                 </div>
-                <div class="image">
-                    <img src="images/people.png" alt="People">
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I  throw my self down among the talll grass by the strem as i lie cllose  to the earth.There are manny variations of passages of lorem Ipsum available.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>APP Design</h2>
+                    <p>I  throw my self down among the talll grass by the strem as i lie cllose  to the earth.There are manny variations of passages of lorem Ipsum available.</p>
+                    <a href="#">Learn more</a>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Banner part end -->
-
-    <!-- About part start -->
-    <section id="about">
+    </div>
+    <!-- ---------------Protfolio----------------- -->
+    <div id="protfolio">
         <div class="container">
-            <div class="about-main">
-                <div class="about-item">
-                    <h1>Learn About Us</h1>
-                    <div class="about-img">
-                        <img src="images/about-1.png" alt="about">
-                        <p>A boat club is a sports club serving boat owners, particularly those interested in rowing and yachting, but also kayaking, canoeing, motor boats and other small boats.</p>
-                    </div>
-                    <div class="about-button">
-                        <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
-                        <a href="#">Find Out More</a>
+            <h1 class="sub-title">My Works</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Hello, it's really a pain to be followed. I will come, will it be followed?</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
                     </div>
                 </div>
-
-                <div class="about-item">
-                    <h1>Test the Seafood</h1>
-                    <div class="about-img">
-                        <img src="images/about-2.png" alt="about">
-                        <p>Seafood is any form of sea life regarded as food by humans, prominently including fish and shellfish. Shellfish include various species of molluscs, crustaceans, and echinoderms. </p>
-                    </div>
-                    <div class="about-button">
-                        <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
-                        <a href="#">Find Out More</a>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Hello, it's really a pain to be followed. I will come, will it be followed?</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
                     </div>
                 </div>
-
-                <div class="about-item">
-                    <h1>Free Parking</h1>
-                    <div class="about-img">
-                        <img src="images/about-3.png" alt="about">
-                        <p>Find your perfect parking space using our growing database of thousands of car parks, street and metered parking and even private garages!</p>
-                    </div>
-                    <div class="about-button">
-                        <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
-                        <a href="#">Contact us</a>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>Hello, it's really a pain to be followed. I will come, will it be followed?</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
                     </div>
                 </div>
             </div>
+            <a href="#" class="btn">See More</a>
         </div>
-    </section>
-    <!-- About part End -->
-
-    <!-- notice par start -->
-
-    <section id="notice">
+    </div>
+    <!-- --------------contact-------------------- -->
+    <div id="contact">
         <div class="container">
-            <div class="notice-main">
-                <div class="notice-left">
-                    <div class="notice-head">
-                        <h2> Notice Board </h2>
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> Contact@example.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 01641119445</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
                     </div>
-
-                    <div class="notice-text">
-                        <h4> Morbi elementum ipsum dolor sit amet ... </h4>
-                        <a href="#"> <i class="fa fa-chevron-right" aria-hidden="true"></i> </a>
-                    </div>
-
-                    <div class="notice-text">
-                        <h4> Lorem ipsum dolor sit amet, consectetuer adipisci ... </h4>
-                        <a href="#"> <i class="fa fa-chevron-right" aria-hidden="true"></i> </a>
-                    </div>
-
-                    <div class="notice-text">
-                        <h4> Morbi elementum ipsum dolor sit amet ... </h4>
-                        <a href="#"> <i class="fa fa-chevron-right" aria-hidden="true"></i> </a>
-                    </div>
-
-                    <div class="notice-text">
-                        <h4> Morbi elementum ipsum dolor sit amet ... </h4>
-                        <a href="#"> <i class="fa fa-chevron-right" aria-hidden="true"></i> </a>
-                    </div>
-
-                    <div class="notice-text">
-                        <h4> Lorem ipsum dolor sit amet, consectetuer adipisci ... </h4>
-                        <a href="#"> <i class="fa fa-chevron-right" aria-hidden="true"></i> </a>
-                    </div>
-
-                    <div class="notice-icon">
-                        <a href="#"> <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> </a>
-                        <a href="#">
-                            <h5> View All </h5>
-                        </a>
-                    </div>
+                    <a class="btn btn2" href="images/my-cv.pdf" download="">Download CV</a>
                 </div>
-
-
-
-                <div class="notice-right">
-                    <div class="notice-head featured">
-                        <h2> Featured Video </h2>
-                    </div>
-
-                    <div class="notice-image">
-                        <img src="images/video.jpg" alt="featured Video">
-                    </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" id="" cols="30" rows="10" placeholder="Write Your Message"></textarea>
+                        <button class="btn btn2" type="submit">Submit</button>
+                    </form>
+                    <spna id="msg"></spna>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- notice part end -->
-
-    <!-- service part start -->
-    <section id="service">
-        <div class="container">
-
-            <div class="ser-main">
-
-                <div class="ser-item">
-                    <div class="news-head">
-                        <h2> News & Event </h2>
-                    </div>
-
-                    <div class="news-text">
-                        <h2>
-                            Nec ipsum lobortis maecenas
-                        </h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam sit amet urna nec pede
-                            tristique volutpat.
-                        </p>
-                    </div>
-
-                    <div class="news-text2">
-                        <h2>
-                            Nec ipsum lobortis maecenas
-                        </h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam sit amet urna nec pede
-                            tristique volutpat.
-                        </p>
-                    </div>
-
-                    <div class="news-icon">
-                        <a href="#"> <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> </a>
-                        <a href="#">
-                            <h5> View All </h5>
-                        </a>
-                    </div>
-                </div>
-
-
-
-
-
-                <div class="ser-item2">
-
-                    <div class="med-head">
-                        <h2> Our Services </h2>
-                    </div>
-                    <div class="med-ser">
-                        <i class="fa fa-check" aria-hidden="true"></i>
-                        <h5>BANQUET HALLS</h5>
-                    </div>
-
-                    <div class="med-ser">
-                        <i class="fa fa-check" aria-hidden="true"></i>
-                        <h5>THE RESIDENCE</h5>
-                    </div>
-                    <div class="med-ser">
-                        <i class="fa fa-check" aria-hidden="true"></i>
-                        <h5>FOOD & BEVERAGE</h5>
-                    </div>
-                    <div class="med-ser">
-                        <i class="fa fa-check" aria-hidden="true"></i>
-                        <h5>GYM</h5>
-                    </div>
-                    <div class="med-ser">
-                        <i class="fa fa-check" aria-hidden="true"></i>
-                        <h5>SWIMMING POOL COMPLEX</h5>
-                    </div>
-                    <div class="med-ser">
-                        <i class="fa fa-check" aria-hidden="true"></i>
-                        <h5>SPORTS</h5>
-                    </div>
-
-
-                    <div class="med-icon">
-                        <a href="#"> <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> </a>
-                        <a href="#">
-                            <h5> All Services </h5>
-                        </a>
-                    </div>
-
-                </div>
-
-
-
-                <div class="ser-item3">
-                    <div class="gal-head">
-                        <h2> Photo Gallery </h2>
-                    </div>
-
-                    <div class="gal-img">
-                        <img src="images/gal-1.jpg" alt="photo">
-                        <img src="images/gal-2.jpg" alt="photo">
-                    </div>
-                    <div class="gal-img">
-                        <img src="images/gal-2.jpg" alt="photo">
-                        <img src="images/gal-1.jpg" alt="photo">
-                    </div>
-
-                    <div class="gal-icon">
-                        <a href="#"> <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> </a>
-                        <a href="#">
-                            <h5> View All </h5>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-
+        <!-- <div class="copyright">
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div> -->
+    </div>
+    <footer class="footer">
+        <div class="copyright">
+            <p>It is very important for the customer to pay attention to the adipiscing process.</p>
         </div>
-    </section>
-    <!-- service part end -->
+    </footer>
 
-    <!-- doctor part start -->
-    <section id="doctor">
-        <div class="container">
-            <div class="doc-head">
-                <h2> Photo Gallery </h2>
-            </div>
+    <!-- -------------jsvasctipt-------------- -->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
 
-            <div class="doc-main">
-                <div class="doc-item">
-                    <div class="doc-img">
-                        <img src="images/md.png" alt="MD">
-                    </div>
+        function opentab(tabname){
+            for(tablink of  tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of  tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add('active-tab');
+        }
+        // -----------menubar---------------
+        var sidemenu = document.getElementById('sidemenu');
 
-                    <div class="doc-text">
-                        <h2>Faisal Islam Anik</h2>
-                        <h3>Founder</h3>
-                        <h4>Daffodil Boat Club</h4>
-                    </div>
-                </div>
-
-              
-
-                <div class="doc-item">
-                    <div class="doc-img">
-                        <img src="images/md.png" alt="MD">
-                    </div>
-
-                    <div class="doc-text">
-                        <h2>Faisal Islam Anik</h2>
-                        <h3>Founder</h3>
-                        <h4>Daffodil Boat Club</h4>
-                    </div>
-                </div>
-
-
-            </div>
-
-
-        </div>
-    </section>
-    <!-- doctor part end -->
-
-    <!-- footer part start -->
-    <section id="footer">
-        <div class="container">
-            <div class="foot-logo">
-                <img src="images/logo2.png" alt="logo">
-                <h2>Daffodil Boat Club</h2>
-            </div>
-
-            <div class="foot-main">
-                <div class="foot-item">
-                    <h2>Navigation</h2>
-
-                    <div class="foot-text">
-                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                        <h5>Home</h5>
-                    </div>
-                    <div class="foot-text">
-                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                        <h5>About us</h5>
-                    </div>
-                    <div class="foot-text">
-                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                        <h5>Services</h5>
-                    </div>
-                </div>
-
-                <div class="foot-item">
-                    <h2>Services</h2>
-
-                    <div class="foot-text">
-                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                        <h5>BANQUET HALLS</h5>
-                    </div>
-                    <div class="foot-text">
-                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                        <h5>Gym</h5>
-                    </div>
-                    <div class="foot-text">
-                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                        <h5>Parking services</h5>
-                    </div>
-                </div>
-
-
-                <div class="foot-item">
-                    <h2>Training</h2>
-
-                    <div class="foot-text">
-                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                        <h5>SWIMMING</h5>
-                    </div>
-                    <div class="foot-text">
-                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                        <h5>Yoga</h5>
-                    </div>
-                    <div class="foot-text">
-                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                        <h5>Sailor</h5>
-                    </div>
-                </div>
-
-
-                <div class="foot-item">
-                    <h2>Contact</h2>
-
-                    <div class="foot-text">
-                        <i class="fa fa-phone" aria-hidden="true"></i>
-                        <h5>Tel:+88-0000555</h5>
-                    </div>
-                    <div class="foot-text">
-                        <i class="fa fa-fax" aria-hidden="true"></i>
-                        <h5>Fax:+88-9999</h5>
-                    </div>
-                    <div class="foot-text">
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                        <h5>Email: explore@gmail.com</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- footer part end -->
-
-    <!-- copyright part start -->
-    <section id="copyright">
-        <div class="container">
-            <div class="copyright-text">
-                <h4> 2015 Daffodil Boat Club </h4>
-            </div>
-        </div>
-    </section>
-    <!-- copyright part end -->
+        function openmenu(){
+            sidemenu.style.right = '0';
+        }
+        function closemenu(){
+            sidemenu.style.right = '-200px';
+        }
+    </script>
+    <script src="js/app.js"></script>
 </body>
-
 </html>
